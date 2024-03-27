@@ -5,45 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri Foto</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+        .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: left;
+            gap: 10px;
+            padding: 10px;
         }
+
         .foto {
-            width: 100px; /* Ganti dengan nilai NRP terakhir */
-            height: 100px; /* Ganti dengan nilai NRP terakhir */
-            margin: 10px;
+            width: 150px;
+            height: 150px;
             overflow: hidden;
+            position: relative;
+            border-radius: 8px;
         }
+
         .foto img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .foto:hover img {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <!-- Ganti dengan 18 item foto -->
-    <div class="foto"><img src="gambar/exo 1.jpg" ></div>
-    <div class="foto"><img src="gambar/NCT.jpg" ></div>
-    <div class="foto"><img src="gambar/exo1.jpg" ></div>
-    <div class="foto"><img src="gambar/nct127(1).jpg" ></div>
-    <div class="foto"><img src="gambar/exo2.jpg" ></div>
-    <div class="foto"><img src="gambar/nct127.jpg" ></div>
-    <div class="foto"><img src="gambar/exo3.jpg" ></div>
-    <div class="foto"><img src="gambar/nctdream.jpg" ></div>
-    <div class="foto"><img src="gambar/exo4.jpg" ></div>
-    <div class="foto"><img src="gambar/nctdream2.jpg" ></div>
-    <div class="foto"><img src="gambar/exo5.jpg" ></div>
-    <div class="foto"><img src="gambar/wayv.jpg" ></div>
-    <div class="foto"><img src="gambar/exo6.jpg" ></div>
-    <div class="foto"><img src="gambar/wayvv1.jpg" ></div>
-    <div class="foto"><img src="gambar/exo7.jpg" ></div>
-    <div class="foto"><img src="gambar/nctwish.jpg" ></div>
-    <div class="foto"><img src="gambar/exo8.jpg" ></div>
-    <div class="foto"><img src="gambar/nctwish2.jpg"></div>
+    <div class="gallery">
+        <div class="foto"><img src="gambar/exo 1.jpg" alt="Foto 1"></div>
+        <div class="foto"><img src="gambar/NCT.jpg" alt="Foto 2"></div>
+        <div class="foto"><img src="gambar/exo1.jpg" alt="Foto 3"></div>
+        <div class="foto"><img src="gambar/nct127(1).jpg" alt="Foto 4"></div>
+        <div class="foto"><img src="gambar/exo2.jpg" alt="Foto 5"></div>
+        <div class="foto"><img src="gambar/nct127.jpg" alt="Foto 6"></div>
+        <div class="foto"><img src="gambar/exo3.jpg" alt="Foto 7"></div>
+        <div class="foto"><img src="gambar/nctdream.jpg" alt="Foto 8"></div>
+        <div class="foto"><img src="gambar/exo4.jpg" alt="Foto 9"></div>
+        <div class="foto"><img src="gambar/nctdream2.jpg" alt="Foto 10"></div>
+        <div class="foto"><img src="gambar/exo5.jpg" alt="Foto 11"></div>
+        <div class="foto"><img src="gambar/wayv.jpg" alt="Foto 12"></div>
+        <div class="foto"><img src="gambar/exo6.jpg" alt="Foto 13"></div>
+        <div class="foto"><img src="gambar/wayvv1.jpg" alt="Foto 14"></div>
+        <div class="foto"><img src="gambar/exo7.jpg" alt="Foto 15"></div>
+        <div class="foto"><img src="gambar/nctwish.jpg" alt="Foto 16"></div>
+        <div class="foto"><img src="gambar/exo8.jpg" alt="Foto 17"></div>
+        <div class="foto"><img src="gambar/nctwish2.jpg" alt="Foto 18"></div>
+    </div>
 </body>
 </html>
