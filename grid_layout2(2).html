@@ -9,13 +9,14 @@
             grid-gap: 50px;
             background-color: #2196F3;
             padding: 10px;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto auto;
         }
         .item1 {
-            grid-column-start:1;
-            grid-column-end:3 ;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            grid-column: 1/2;
            
         }
         .item {
@@ -37,12 +38,11 @@
             <div class="item">6</div>
             <div class="item">7</div>
             <div class="item">8</div>
-            <div>Ini akan membuat kotak yang nomer 1 menjadi lebar memenuhi layar saamping.
-                Sedaangkan kolom yang lainya hanay separuh dari kolom 1. bentuk kolomnya persegi panjang ke samping (melebar)
-                kode ini digunkan unutk membuat pola atau nbentuk yanhg diingin pada kolom.
+            <div>Skenario 1: Ini akan membuat kotak menjadi 4 panjang 2 kotak. karena menggunakn 4/4 diman itu digunakn untuk membuat 
+                kotaknya yang ada didalam kontainer ukurannya berkombinasi.
             </div>
-            <p>Ini akan membuat kotak atau colom berubah sesuai ynag diingiankan. Dengna menggunakna kode atau elemn ini, 
-                tatanan kotak atau kolom dapat diubah atau disususn sesuia selera. </p>
+            <p>Skenario 2 :pada kolom 1 dan 5 akan berubah menjadi lebuh besar karena dan kolom yang laiintya lebih kecil.
+                Jika ditambah sebuah p manka 4 kotak akan lebih bedsar dari 4 kotk yng laiinya.</p>
         </div>
     </body>
 </html>
